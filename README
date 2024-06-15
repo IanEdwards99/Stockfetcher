@@ -1,8 +1,15 @@
+Install virtualenv if not already:
+pip install virtualenv
+
+Create virtual environment:
+virtualenv env
+
 Activate virtual environment:
-.\venv\Scripts\activate
+source env/bin/activate
 
-Install requirements:
-python -m pip install -r requirements.txt
+Install tkinter and requirements:
+sudo apt-get install python3-tk
+pip install -r requirements.txt
 
-Regenerate requirements:
+Regenerate requirements (pip install pipreqs):
 pipreqs .
